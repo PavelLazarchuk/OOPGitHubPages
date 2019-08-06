@@ -1,0 +1,171 @@
+
+
+.container { 
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.body-background {
+    background-color: rgb(32, 175, 194);
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.header {
+    background-color: rgb(236, 230, 230);
+    margin-bottom: 40px;
+    padding: 15px 50px;
+    border: 1px solid #201f1f;
+}
+
+.header-flex {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    height: 50px;
+}
+
+.header-create {
+    font-size: 28px;
+    color: #332e2e;
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(221, 211, 211);
+    outline: 0;
+    border: 1px solid #bbb2b2;
+    cursor: pointer;
+}
+
+.header-create:hover {
+    border-color: #817a7a;
+}
+
+.main {
+    min-height: 350px;
+    background-color: rgb(236, 230, 230);
+    padding: 25px 20px 40px;
+    border: 1px solid #201f1f;
+}
+
+.main-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-card-position {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.main-card {
+    padding: 12px;
+    border: 1px solid #3d3c3c;
+    border-radius: 2px;
+    background-color: rgb(202, 153, 189);
+    margin: 10px 20px;
+    position: relative;
+}
+.modal-modal {
+    z-index: 9999999;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 30%;
+    background-color: white;
+    border-radius: 5px;
+    border: 3px solid rgb(32, 175, 194);
+    box-sizing: border-box;
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+}
+.modal-overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-position {
+
+    border-radius: 5px;
+    border: 3px solid rgb(32, 175, 194);
+}
+.close-modal {
+    color: darkslategrey;
+    border-radius: 50px;
+    border: 1px solid darkslategrey;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 7px;
+    cursor: pointer;
+}
+.close-modal:hover {
+    border-color: black;
+}
+.btn-visit {
+    padding: 7px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid darkslategrey;
+    margin: 40px 20px 20px;
+    align-self: center;
+    cursor: pointer;
+}
+.btn-visit:hover {
+    border-color: black;
+}
+.select-style {
+    width: 90%;
+    height: 40px;
+    margin-top: 15px;
+}
+.modal-input-position {
+    margin: 25px 0 0;
+}
+.modal-comment {
+    margin-top: 15px;
+}
+.input {
+    width: 90%;
+}
+.visit-visible {
+    display: none;
+}
+.visit-cardio-visible {
+    display: none;
+}
+.visit-dantist-visible {
+    display: none;
+}
+.visit-age-visible {
+    display: none;
+}
+
+.close-card{
+    color: darkslategrey;
+    border-radius: 50px;
+    border: 1px solid darkslategrey;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 2px 6px;
+    cursor: pointer;
+}
+
+.paragraph {
+    margin-bottom: 2px;
+    color: #332e2e;
+}

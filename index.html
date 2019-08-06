@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Visit to the doctor</title>
+</head>
+
+<body>
+    <div class="body-background" id="back">
+        <div class="container">
+            <header class="header">
+                <div class="header-flex">
+                    <img src="img/doctor.jpg" alt="doctor-logo" class="header-logo">
+                    <button class="header-create" id="createModal">Create Visit</button>
+                </div>
+            </header>
+
+            <main class="main">
+                <div class="main-flex" id="mainId">
+                    <div class="main-card-position" id="mainCardId"></div>
+                    <p id="main-text">No items have been added</p>
+                    <div class='modal-modal' id="modal">
+
+                            <input type='text' id='userName' placeholder="Введите имя:"  class="modal-input-position input"   required>
+                            <input type='text' id='date' placeholder="Введите дату визита в формате(дд.мм.гггг):"class="modal-input-position input"  required>
+                            <p>
+                                <select class='select-style' id="select" onchange='modalVisit.checkDoctor()' size='1' name="doctor[]" required>
+                                    <option disabled selected>Выберите врача</option>
+                                    <option value="Кардиолог">Кардиолог</option>
+                                    <option value="Терапевт">Терапевт</option>
+                                    <option value="Дантист">Дантист</option>
+                                </select>
+                            </p>
+                            <button id='closeModal' class='close-modal' onclick='modalVisit.close()'>X</button>
+                            <input type="text" placeholder="Цель визита" class="modal-input-position input" id="purposeVisit" required>
+                            <input type="text" id="pressure" placeholder="Введите ваше давление" class="modal-input-position input" required>
+                            <input type="number" id="indexWeight" placeholder="Введите ваш индекс массы тела" class="modal-input-position input" required>
+                            <input type="text" id='illness' placeholder="перенесенные заболевания сосудистой системы" class="modal-input-position input" required>
+                            <input type="number" id="age" placeholder="возраст" class="modal-input-position input" required>
+                            <input type="text" id="lastDateVisit" placeholder="дата последнего визита в формате(дд.мм.гггг):" class="modal-input-position input" required>
+                            <textarea placeholder="Введите комметарий" class='modal-comment input' name="comment" id="comment" maxlength="400" cols="20" rows="3"></textarea>
+                            <button id='createVisit' class='btn-visit'>Записаться к врачу</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+        <script src="js/index.js"></script>
+</body>
+
+</html>
